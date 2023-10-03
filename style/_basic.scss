@@ -1,0 +1,128 @@
+// color
+$colorMain: #CDA274;
+$colorTitle: #292F36;
+$colorDsc: #4D5053;
+$colorSelect: #F4F0EC;
+$colorBorder: #E7E7E7;
+$colorBgBtnMainBlock: #292F36;
+$colorCounter: #CDA274;
+$colorBgArticlesHover: #F4F0EC;
+
+// font size
+$fSLogoTitle: 40px;
+$fSNav: 20px;
+$fSMainTittle: 65px;
+$fSDsc: 22px;
+$fSBtnHead: 18px;
+$fSHeadTwo: 50px;
+$fSNumber: 85px;
+$fSHeadArticle: 25px;
+$fSDateArticles: 16px;
+$fSHeadFooter: 25px;
+
+// width
+$widthSuite: 1200px;
+
+// center
+.center {
+  padding-left: calc(50% - #{$widthSuite} / 2);
+  padding-right: calc(50% - #{$widthSuite} / 2);
+}
+
+//style non
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+// component font mixins
+@mixin commonСomponentsFontStyle($line-height, $spacing) {
+  font-style: normal;
+  font-weight: 400;
+  line-height: $line-height;
+  letter-spacing: $spacing;
+}
+
+@mixin fontComponentHeader($fontSize) {
+  color: $colorTitle;
+  font-family: 'DM Serif Display', serif;
+  font-size: $fontSize;
+  @include commonСomponentsFontStyle(125%, 1px);
+}
+
+@mixin fontComponentHeadThree($fontSize) {
+  color: $colorTitle;
+  font-family: 'DM Serif Display', serif;
+  font-size: $fontSize;
+  @include commonСomponentsFontStyle(125%, 0.5px);
+}
+@mixin animation($animElem) {
+  transition: $animElem 0.3s ease;
+}
+
+// components font
+%navFont {
+  color: $colorTitle;
+  font-family: 'Jost', sans-serif;
+  font-size: $fSNav;
+  @include commonСomponentsFontStyle(125%, auto);
+}
+
+%dscFont {
+  color: $colorDsc;
+  font-family: 'Jost', sans-serif;
+  font-size: $fSDsc;
+  @include commonСomponentsFontStyle(150%, 0.22px);
+}
+
+%btnMainFont {
+  color: #FFF;
+  font-family: 'Jost', sans-serif;
+  font-size: $fSBtnHead;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 33px */
+  letter-spacing: 0.36px;
+}
+
+%modernKitchenFont {
+  color: $colorTitle;
+  font-family: 'DM Serif Display', serif;
+  font-size: $fSHeadArticle;
+  @include commonСomponentsFontStyle(125%, 0.5px);
+}
+
+%fontCounter {
+  color: $colorCounter;
+  font-family: 'DM Serif Display', serif;
+  font-size: $fSNumber;
+  @include commonСomponentsFontStyle(125%, 1.7px);
+}
+
+%fontDate {
+  color: $colorDsc;
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  @include commonСomponentsFontStyle(150%, 0.16px);
+}
+
+%fontFooterHead {
+  color: $colorTitle;
+  font-family: 'DM Serif Display', serif;
+  font-size: $fSHeadFooter;
+  @include commonСomponentsFontStyle(125%, auto);
+}

@@ -1,0 +1,73 @@
+@import "basic";
+
+.vue {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  &__div {
+    border: 1px red solid;
+    padding: 30px;
+  }
+  &__head {
+    text-align: center;
+  }
+}
+
+.hw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hw1 {
+  flex-basis: 45%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  &__dsc {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    background-color: #002c00;
+    color: #02fc02;
+  }
+}
+
+.hw2 {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  &__list {
+    list-style: none;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #002c00;
+    color: #02fc02;
+  }
+  &__item{
+    padding: 5px;
+  }
+  &__item:not(:first-child) {
+    border-top: 1px #02fc02 solid;
+  }
+  &__input {
+    padding: 20px;
+    border: none;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: black;
+  }
+}
+
+.btn-vue {
+  padding: 20px;
+  background-color: #028d02;
+  font-size: 20px;
+  color: #FFFFFF;
+  @include animation(background-color);
+}
+.btn-vue:hover {
+  background-color: #035403;
+}
+
+.btn-vue:active {
+  transform: scale(0.9);
+}
