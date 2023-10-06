@@ -342,7 +342,7 @@ button {
   display: flex;
   justify-content: start;
   align-items: center;
-  background: url("/img/head_img-2.jpg") no-repeat;
+  background: url("../img/head_img-2.jpg") no-repeat;
   background-size: cover;
   border-radius: 62px;
 }
