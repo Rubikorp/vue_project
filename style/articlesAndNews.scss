@@ -9,12 +9,14 @@
   font-weight: 600;
   line-height: 150%;
 }
+
 //heading-page
 .heading-page {
   background: url("/img/articles&news-h-bg.jpg") no-repeat;
   background-size: cover;
   height: 356px;
   position: relative;
+
   &__block-position {
     position: absolute;
     width: 100%;
@@ -23,15 +25,18 @@
     justify-content: center;
     align-items: end;
   }
+
   &__block-head {
     padding: 41px 78px;
     background-color: #FFFFFF;
     border-radius: 37px 37px 0 0;
     text-align: center;
   }
+
   &__head {
     @include fontComponentHeader(50px);
   }
+
   &__dsc {
     @extend %dscFont;
   }
@@ -40,6 +45,7 @@
 //latest post
 .latest {
   margin-top: 200px;
+
   &__head {
     @include fontComponentHeader(50px);
   }
@@ -52,22 +58,27 @@
   padding: 22px;
   border-radius: 60px;
   border: 1px $colorBorder solid;
+
   &__img {
     flex-basis: 765px;
     flex-grow: 1;
     border-radius: 50px;
   }
+
   &__right-div {
     padding-right: 60px;
     padding-top: 50px;
   }
+
   &__head {
     @include fontComponentHeadThree(25px);
   }
+
   &__dsc {
     margin-top: 22px;
     @extend %dscFont;
   }
+
   &__div-link-date {
     padding-right: 31px;
     margin-top: 41px;
@@ -75,6 +86,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__date {
     @extend %fontDate;
   }
@@ -84,9 +96,11 @@
 
 .articles {
   margin-top: 150px;
+
   &__head {
     @include fontComponentHeader(50px);
   }
+
   &__block {
     margin-top: 52px;
     display: flex;
@@ -117,10 +131,12 @@
     flex-direction: column;
     gap: 21px;
   }
+
   &__head-three {
     max-width: 260px;
     @include fontComponentHeadThree(25px);
   }
+
   &__block-dsc {
     display: flex;
     flex-direction: column;
@@ -165,6 +181,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+
   &__count:not(:last-child) {
     width: 52px;
     height: 52px;
@@ -175,6 +192,7 @@
     border-radius: 50%;
     @extend %fontPageCount;
   }
+
   &__count:first-child {
     border: transparent;
     background-color: $colorSelect;
