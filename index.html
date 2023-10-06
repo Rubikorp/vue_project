@@ -201,14 +201,14 @@
                             <p class="articles__date">
                                 26 December,2022
                             </p>
-                            <button class="articles__btn">
+                            <a href="articles-news.html" class="articles__btn">
                                 <svg class="articles__svg" xmlns="http://www.w3.org/2000/svg" width="52" height="53"
                                      viewBox="0 0 52 53" fill="none">
                                     <circle cx="26" cy="26.267" r="26" fill="#F4F0EC"/>
                                     <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -228,14 +228,14 @@
                             <p class="articles__date">
                                 26 December,2022
                             </p>
-                            <button class="articles__btn">
+                            <a href="articles-news.html" class="articles__btn">
                                 <svg class="articles__svg" xmlns="http://www.w3.org/2000/svg" width="52" height="53"
                                      viewBox="0 0 52 53" fill="none">
                                     <circle cx="26" cy="26.267" r="26" fill="#F4F0EC"/>
                                     <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -255,14 +255,14 @@
                             <p class="articles__date">
                                 26 December,2022
                             </p>
-                            <button class="articles__btn">
+                            <a href="articles-news.html" class="articles__btn">
                                 <svg class="articles__svg" xmlns="http://www.w3.org/2000/svg" width="52" height="53"
                                      viewBox="0 0 52 53" fill="none">
                                     <circle cx="26" cy="26.267" r="26" fill="#F4F0EC"/>
                                     <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -320,61 +320,60 @@
             </div>
         </div>
     </footer>
-
 </div>
-<div class="vue center">
-    <div class="vue__div">
-        <h1 class="vue__head">VUE</h1>
-        <div id="app" class="hw">
-            <div class="hw1">
-                <p class="hw1__dsc">{{message}}</p>
-                <button v-on:click="reverseMessage" class="btn-vue">Перевернуть сообщение</button>
-            </div>
-            <div class="hw2">
-                <ul class="hw2__list">
-                    <li class="hw2__item" v-for="todo in todos" v-on:click="deleteTodos">
-                        {{todo.text}}
-                    </li>
-                </ul>
-                <input class="hw2__input" v-model="inputUser">
-                <button class="btn-vue" v-on:click="addTodos">Добавить</button>
-            </div>
+<!--<div class="vue center">-->
+<!--    <div class="vue__div">-->
+<!--        <h1 class="vue__head">VUE</h1>-->
+<!--        <div id="app" class="hw">-->
+<!--            <div class="hw1">-->
+<!--                <p class="hw1__dsc">{{message}}</p>-->
+<!--                <button v-on:click="reverseMessage" class="btn-vue">Перевернуть сообщение</button>-->
+<!--            </div>-->
+<!--            <div class="hw2">-->
+<!--                <ul class="hw2__list">-->
+<!--                    <li class="hw2__item" v-for="todo in todos" v-on:click="deleteTodos">-->
+<!--                        {{todo.text}}-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <input class="hw2__input" v-model="inputUser">-->
+<!--                <button class="btn-vue" v-on:click="addTodos">Добавить</button>-->
+<!--            </div>-->
 
-        </div>
-    </div>
-</div>
-<script src="https://unpkg.com/vue@next"></script>
-<script>
-    const app = {
-        data() {
-            return {
-                message: 'Привет, Vue.js!',
-                inputUser: 'введите задачу',
-                todos: [
-                    { text: 'Learn JavaScript' },
-                    { text: 'Learn Vue' },
-                    { text: 'Build something awesome' }
-                ]
-            }
-        },
-        methods: {
-            reverseMessage() {
-                this.message = this.message.split('').reverse().join('')
-            },
-            addTodos() {
-                if (this.inputUser !== "") {
-                    this.todos.push({text: this.inputUser})
-                    return this.inputUser = "";
-                }
-            },
-            deleteTodos(event) {
-                if (event.target.getElementsByTagName("li")) {
-                    return this.todos = this.todos.filter((el) => el.text !== event.target.textContent)
-                }
-            }
-        }
-    }
-    Vue.createApp(app).mount('#app')
-</script>
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<script src="https://unpkg.com/vue@next"></script>-->
+<!--<script>-->
+<!--    const app = {-->
+<!--        data() {-->
+<!--            return {-->
+<!--                message: 'Привет, Vue.js!',-->
+<!--                inputUser: 'введите задачу',-->
+<!--                todos: [-->
+<!--                    { text: 'Learn JavaScript' },-->
+<!--                    { text: 'Learn Vue' },-->
+<!--                    { text: 'Build something awesome' }-->
+<!--                ]-->
+<!--            }-->
+<!--        },-->
+<!--        methods: {-->
+<!--            reverseMessage() {-->
+<!--                this.message = this.message.split('').reverse().join('')-->
+<!--            },-->
+<!--            addTodos() {-->
+<!--                if (this.inputUser !== "") {-->
+<!--                    this.todos.push({text: this.inputUser})-->
+<!--                    return this.inputUser = "";-->
+<!--                }-->
+<!--            },-->
+<!--            deleteTodos(event) {-->
+<!--                if (event.target.getElementsByTagName("li")) {-->
+<!--                    return this.todos = this.todos.filter((el) => el.text !== event.target.textContent)-->
+<!--                }-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--    Vue.createApp(app).mount('#app')-->
+<!--</script>-->
 </body>
 </html>

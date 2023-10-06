@@ -1,0 +1,326 @@
+.center {
+  padding-left: calc(50% - 1200px / 2);
+  padding-right: calc(50% - 1200px / 2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav__list__item, .nav__link {
+  color: #292F36;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: auto;
+}
+
+.post__dsc, .heading-page__dsc, .contacts__address, .contacts__email, .contacts__tel, .pages__item a, .logo-link-contact__dsc {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.articles__btn-img, .post__date {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+}
+
+.contacts__head, .pages__name {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: auto;
+}
+
+.header {
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+.footer {
+  margin-top: 96px;
+  margin-bottom: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  gap: 101px;
+}
+
+.logo-link-contact {
+  max-width: 382px;
+}
+.logo-link-contact__dsc {
+  margin-top: 18px;
+}
+.logo-link-contact__contacts-div {
+  margin-top: 31px;
+  display: flex;
+  gap: 54px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  list-style: none;
+}
+.contacts {
+  max-width: 258px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__head {
+  margin-bottom: 26px;
+}
+.contacts__email, .contacts__tel {
+  margin-top: 31px;
+}
+
+.pagination__count:not(:last-child) {
+  color: #292F36;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.heading-page {
+  background: url("/img/articles&news-h-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 356px;
+  position: relative;
+}
+.heading-page__block-position {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.heading-page__block-head {
+  padding: 41px 78px;
+  background-color: #FFFFFF;
+  border-radius: 37px 37px 0 0;
+  text-align: center;
+}
+.heading-page__head {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+.latest {
+  margin-top: 200px;
+}
+.latest__head {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+
+.post {
+  margin-top: 27px;
+  display: flex;
+  gap: 65px;
+  padding: 22px;
+  border-radius: 60px;
+  border: 1px #E7E7E7 solid;
+}
+.post__img {
+  flex-basis: 765px;
+  flex-grow: 1;
+  border-radius: 50px;
+}
+.post__right-div {
+  padding-right: 60px;
+  padding-top: 50px;
+}
+.post__head {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.post__dsc {
+  margin-top: 22px;
+}
+.post__div-link-date {
+  padding-right: 31px;
+  margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.articles {
+  margin-top: 150px;
+}
+.articles__head {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+.articles__block {
+  margin-top: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.articles__article {
+  position: relative;
+  max-width: 381px;
+  min-height: 510px;
+  padding: 21px;
+  border-radius: 62px;
+  border: #E7E7E7 1px solid;
+  box-shadow: 0 10px 30px 0 rgba(255, 255, 255, 0.25);
+  transition: background-color 0.3s ease;
+}
+.articles__article:hover {
+  background: #F4F0EC;
+}
+.articles__div {
+  height: 100%;
+  border-radius: 61px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 21px;
+}
+.articles__head-three {
+  max-width: 260px;
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.articles__block-dsc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.articles__img {
+  height: 281px;
+  max-width: 340px;
+  object-fit: cover;
+  border-radius: 45px 45px 0 0;
+}
+.articles__btn-img {
+  position: absolute;
+  top: 249px;
+  left: 41px;
+  padding: 11px;
+  background-color: #fff;
+  border-radius: 8px 8px 8px 0;
+}
+.articles__svg circle {
+  transition: fill 0.3s ease;
+}
+.articles__article:hover svg circle {
+  fill: #FFFFFF;
+}
+.articles__date-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 51px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.pagination__count:not(:last-child) {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #CDA274 solid;
+  border-radius: 50%;
+}
+.pagination__count:first-child {
+  border: transparent;
+  background-color: #F4F0EC;
+}
+
+/*# sourceMappingURL=articlesAndNews.css.map */

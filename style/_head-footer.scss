@@ -1,0 +1,87 @@
+//header
+.header {
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @include fontComponentHeader($fSLogoTitle);
+  }
+}
+
+.nav {
+  &__link {
+    @extend %navFont;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+
+    &__item {
+      @extend %navFont
+    }
+  }
+}
+
+// footer
+.footer {
+  margin-top: 96px;
+  margin-bottom: 116px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    gap: 101px;
+  }
+}
+
+.logo-link-contact {
+  max-width: 382px;
+  &__dsc {
+    margin-top: 18px;
+    @extend %dscFont;
+  }
+  &__contacts-div {
+    margin-top: 31px;
+    display: flex;
+    gap: 54px;
+  }
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  list-style: none;
+  &__name {
+    @extend %fontFooterHead;
+  }
+  &__item a{
+    @extend %dscFont;
+  }
+}
+
+.contacts {
+  max-width: 258px;
+  display: flex;
+  flex-direction: column;
+  &__head {
+    margin-bottom: 26px;
+    @extend %fontFooterHead;
+  }
+  &__address, &__email, &__tel {
+    @extend %dscFont;
+  }
+  &__email, &__tel {
+    margin-top: 31px;
+  }
+}
