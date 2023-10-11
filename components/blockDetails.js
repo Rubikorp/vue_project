@@ -118,10 +118,10 @@ const blockDetails = {
         changeButton(id) {
             for (let i = 0; i < this.tags.length; i++) {
                 if (this.tags[i].id === id) {
-                    this.tags[i].isActive = true
-                    this.currenDetails = this.details.filter((detail) => detail.tag === this.tags[i].tag)
+                    this.tags[i].isActive = true;
+                    this.currenDetails = this.details.filter((detail) => detail.tag === this.tags[i].tag);
                 } else if (this.tags[i].isActive === true) {
-                    this.tags[i].isActive = false
+                    this.tags[i].isActive = false;
                 }
             }
         }
