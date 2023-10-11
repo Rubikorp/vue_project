@@ -1,0 +1,148 @@
+@import "basic";
+@import "head-footer";
+
+.head-img-details {
+  height: 351px;
+  background: url("../img/block-details/head-img.jpg") no-repeat;
+  background-size: cover;
+}
+
+.block-details {
+  margin-top: 200px;
+  margin-bottom: 96px;
+}
+
+.block-details {
+  display: flex;
+  gap: 57px;
+}
+
+.art-det {
+  max-width: 800px;
+
+  &__head {
+    @include fontComponentHeader(50px);
+  }
+
+  &__img {
+    max-width: 800px;
+    border-radius: 50px;
+  }
+
+  &__dsc {
+    @extend %dscFont;
+  }
+
+  &__date-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+    margin-bottom: 48px;
+  }
+
+  &__date, &__tags {
+    @extend %fontDate
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    counter-reset: myCounter;
+    margin-top: 32px;
+    margin-bottom: 44px;
+  }
+
+  &__item {
+    @extend %dscFont;
+    list-style: none;
+    display: flex;
+  }
+
+  &__item:before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    padding-right: 14px;
+    color: #CDA274;
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 27px;
+  padding: 53px 217px;
+  border-radius: 50px;
+  background-color: #F4F0EC;
+
+  &__span {
+    height: 90px;
+    color: #CDA274;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 200px;
+    transform: rotate(180deg);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &__dsc {
+    text-align: center;
+    color: #CDA274;
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 125%; /* 31.25px */
+    letter-spacing: 0.5px;
+  }
+}
+
+.two-head-mb {
+  margin-bottom: 20px;
+}
+
+.img2-mb {
+  margin-bottom: 35px;
+}
+
+.tags {
+  &__head {
+    @include fontComponentHeader(25px);
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__button {
+    border-radius: 10px;
+    padding: 9px 30px;
+    background: #F4F0EC;
+    color: #292F36;
+    font-family: "Jost", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+  }
+}
+
+.active {
+  background: #292F36;
+  color: #F4F0EC;
+}
